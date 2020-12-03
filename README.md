@@ -1,3 +1,25 @@
+I couldn't get the last rescursive function working, but tested without its implementation. 
+Here are the results. 
+
+Lines executed:95.83% of 24
+Branches executed:100.00% of 24
+Taken at least once:70.83% of 24
+No calls
+Creating 'TicTacToeBoard.cpp.gcov'
+
+File 'TicTacToeBoardTest.cpp'
+Lines executed:100.00% of 32
+Branches executed:69.23% of 182
+Taken at least once:34.62% of 182
+Calls executed:56.46% of 271
+Creating 'TicTacToeBoardTest.cpp.gcov'
+
+Lines executed:98.21% of 56
+
+
+
+
+
 # Getting Started
 
 Build the Unit Testing CPP ("gtest") container if you have not already:

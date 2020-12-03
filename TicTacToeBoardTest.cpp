@@ -40,16 +40,16 @@ TEST(TicTacToeBoardTest, getPiece2)
 {
   TicTacToeBoard d;
   d.placePiece(2,2);
-  Piece test =  d.getPiece(2,2);
-	ASSERT_TRUE(test == X);
+  Piece test = d.placePiece(2,2);
+	ASSERT_TRUE(test == Invalid);
 }
 
 TEST(TicTacToeBoardTest, getPiece3)
 {
   TicTacToeBoard e;
   e.placePiece(2,2);
-  Piece test =  e.getPiece(3,-1);
-	ASSERT_TRUE(test == Invalid);
+  Piece test =  e.getPiece(2,1);
+	ASSERT_TRUE(test == Blank);
 }
 
 TEST(TicTacToeBoardTest, swapturn1)
@@ -58,4 +58,10 @@ TEST(TicTacToeBoardTest, swapturn1)
   f.toggleTurn();
   f.toggleTurn();
 	ASSERT_TRUE(f.toggleTurn() == O);
+}
+
+TEST(TicTacToeBoardTest, win1)
+{
+  TicTacToeBoard g;
+  ASSERT_TRUE(g.getWinner() == Invalid);
 }
